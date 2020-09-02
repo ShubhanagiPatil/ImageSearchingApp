@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/activity_margin"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Activities.ImageSearchActivity">
+
+    <ImageView
+        android:id="@+id/img_details"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        android:hint="@string/hint_search"
+        android:paddingBottom="@dimen/dimen_20"
+        android:src="@drawable/default_img" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/ed_comment"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+            android:layout_below="@id/img_details"
+            android:layout_weight="0.7" />
+
+        <Button
+            android:id="@+id/btn_submit_comment"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:imeOptions="actionDone"
+            android:layout_below="@id/img_details"
+            android:layout_weight="0.3"
+            android:text="@string/btn_submit" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"></LinearLayout>
+
+</LinearLayout>
